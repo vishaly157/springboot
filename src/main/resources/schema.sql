@@ -1,0 +1,19 @@
+
+DROP TABLE IF EXISTS emp_dtl;
+DROP TABLE IF EXISTS city_dt;
+
+CREATE TABLE emp_dtl (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fname VARCHAR(250),
+  lname VARCHAR(250),
+  email VARCHAR(250) NOT NULL,
+  city INT,
+  contact BIGINT
+);
+
+CREATE TABLE city_dt (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  country VARCHAR(250),
+  curr VARCHAR(250)
+);
